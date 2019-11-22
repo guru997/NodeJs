@@ -1,4 +1,4 @@
- let express = require('express');
+    let express = require('express');
 
 
     let app = express();
@@ -7,9 +7,9 @@
 
     app.get('/profile/:id',function(req,res)
     {
-        var data = {age:29 , job : 'programmer'}
+        var data = {age:29 , job : 'programmer',hobbies: ['eating','swimming','gamer']}
         res.render('profile', {person:req.params.id, data : data})
     });
 
 
-app.listen(3000);
+    app.listen(3000);
